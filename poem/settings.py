@@ -9,6 +9,10 @@
 #     https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 
+import sys
+reload(sys)
+sys.setdefaultencoding('utf8')
+
 BOT_NAME = 'poem'
 
 SPIDER_MODULES = ['poem.spiders']
@@ -64,9 +68,9 @@ ROBOTSTXT_OBEY = True
 
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
-#ITEM_PIPELINES = {
-#    'poem.pipelines.PoemPipeline': 300,
-#}
+ITEM_PIPELINES = {
+    'poem.pipelines.PoemPipeline': 300,
+}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://doc.scrapy.org/en/latest/topics/autothrottle.html
