@@ -92,3 +92,11 @@ ITEM_PIPELINES = {
 #HTTPCACHE_DIR = 'httpcache'
 #HTTPCACHE_IGNORE_HTTP_CODES = []
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
+
+DATABASE = {
+    'drivername': 'postgres',
+    'host': 'xiange.me',
+    'port': '5432',
+    'username': 'postgres',
+    'database': 'poem'
+}
